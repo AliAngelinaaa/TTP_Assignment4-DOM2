@@ -1,4 +1,4 @@
-!DOCTYPE html>
+
 <head>
 <title>change text on mouse over and change back on mouse out
 </title>
@@ -17,25 +17,31 @@
         }
     </script>
 <style>
-#box {
-float: left;
-width: 150px;
-height: 150px;
-margin-left: 20px;
-margin-top: 20px;
-padding: 15px;
-border: 5px solid black;
+    #box {
+    float: center;
+    width: 100%;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 5px solid black;
+    }
+    .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
-</style>
+    </style>
 </head>
 <html>
 
 <body>
-<div id="box" onmouseover="changeText('Yes, this is Onmouseover Text')" onmouseout="changeback('any thing')" >
+<div style = "text-align: center; font-size: 50px;" id="box" onmouseover="changeText('Hey I told you not to hover over me')" onmouseout="changeback('Dont hover over me!')" >
 
-<div id="text-display" >
-any thing 
-</div>
+    <div id="text-display" >
+        Dont hover over me
+        </div>
 
 </div>
 </body>
