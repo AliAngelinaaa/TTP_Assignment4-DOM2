@@ -50,17 +50,33 @@ input {
     margin: 0;
   }
   
-  .larger-button {
+.larger-button {
     font-size: 24px;
     padding: 20px 40px;
   }
-  
-  #one {
+
+#one {
     background-color: green;
     color: white;
   }
   
-  #two {
+#two {
     background-color: red;
     color: white;
   }
+
+#box {
+    float: center;
+    width: 100%;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 5px solid black;
+  }
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
