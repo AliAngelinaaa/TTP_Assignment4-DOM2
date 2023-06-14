@@ -1,0 +1,22 @@
+#button-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .larger-button {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+  
+  #one {
+    background-color: green;
+    color: white;
+  }
+  
+  #two {
+    background-color: red;
+    color: white;
+  }
