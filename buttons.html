@@ -5,37 +5,14 @@
   <title>button arguement</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .larger-button {
-      font-size: 50px;
-      padding:50px 100px;
-    }
-
-    #one {
-      background-color: green;
-      color: white;
-    }
-
-    #two {
-      background-color: red;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h1>Which Button is Right?</h1>
   <ul>
-    <button id="one">Button One</button>
-    <button id="two">Button two</button>
+    <button id="one" class="larger-button">Button One</button>
+    <button id="two" class="larger-button">Button two</button>
   </ul>
   <script>
    $(document).ready(function () {
@@ -46,10 +23,11 @@
 
       $("#two").on("click", function () {
         $("#one").text("Button One");
-        $("#two").text("No, I'm right!");
+
+        $("#two").text("No, I'm right!"); 
       });
     });
   </script>
-</body>
+</body id="button-body">
 
 </html>
