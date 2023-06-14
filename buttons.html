@@ -2,29 +2,35 @@
 <html>
 
 <head lang="en">
-  <title>button arguement</title>
+  <title>button argument</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    <h1>Which Button is Right?</h1>
+  <h1>Which Button is Right?</h1>
   <ul>
+    <!-- Button One -->
     <button id="one" class="larger-button">Button One</button>
-    <button id="two" class="larger-button">Button two</button>
+
+    <!-- Button Two -->
+    <button id="two" class="larger-button">Button Two</button>
   </ul>
+
   <script>
-   $(document).ready(function () {
+    $(document).ready(function () {
+      // Click event handler for Button One
       $("#one").on("click", function () {
-        $("#one").text("I'm right!");
-        $("#two").text("Button Two");
+        $("#one").text("I'm right!"); // Change Button One's text to "I'm right!"
+        $("#two").text("Button Two"); // Change Button Two's text back to "Button Two"
       });
 
+      // Click event handler for Button Two
       $("#two").on("click", function () {
-        $("#one").text("Button One");
-
-        $("#two").text("No, I'm right!"); 
+        $("#one").text("Button One"); // Change Button One's text back to "Button One"
+        $("#two").text("No, I'm right!"); // Change Button Two's text to "No, I'm right!"
       });
     });
   </script>
