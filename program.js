@@ -1,8 +1,11 @@
-function check() {
-    let pass = document.getElementById("password").value;
-    if (pass != "12345678") {
-       console.log("ALERT: PASSWORD INCORRECT");
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    let password = document.getElementById("password").value;
+    
+    // Check if password is correct
+    if (password !== "12345678") {
+       alert("Incorrect password!");
     } else {
-       document.querySelector("h1").textContent = "Changed";
+       document.querySelector("h1").innerText = "Welcome!";
     }
- }
+ });
